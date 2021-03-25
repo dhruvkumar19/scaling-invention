@@ -1,0 +1,219 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 510px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+        content: "";
+        background:url(https://images.pexels.com/photos/259763/pexels-photo-259763.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)no-repeat center center/cover;
+        position: absolute;
+        top:0px;
+        left:0px;
+        height:642px;
+        width:100%;
+        z-index: -1;
+        opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* services section */
+#services{
+    display: flex;
+    margin: 34px;
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+}
+div.box{
+    border:2px solid brown;
+    border-radius: 47px;
+    padding: 34px;
+    margin: 6px;
+    background-color: rgb(238, 236, 236);
+    margin-bottom: 20px;
+}
+div.box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+div.box p{
+    font-family: 'Bree Serif', serif;
+}
+/* Clients section */
+   #client-Section{
+     height: 344px;
+     position: relative;  
+   }
+   #client-Section::before{
+   content: "";
+   position: absolute;
+   background: url(pngtree-simple-food-delivery-meal-fashion-poster-background-yellow-back-image_158378.jpg);
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity:0.67 ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   }
+   #clients{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       cursor: pointer;
+   }
+   .client-item{
+       padding: 34px;
+   }
+   #clients img{
+       height:124px;
+   }
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background:url(https://previews.123rf.com/images/o0matze0o/o0matze0o1805/o0matze0o180500018/101535114-website-and-internet-contact-us-page-concept-with-hanging-icons-in-front-of-a-silver-background.jpg);
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size:1.3rem ;
+}
+footer{
+    background: rgb(48, 43, 43);
+    color: rgb(221, 213, 199);
+    padding:9px 20px;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    }
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 2.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
